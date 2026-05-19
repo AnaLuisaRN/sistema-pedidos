@@ -8,11 +8,11 @@ import Login from "./components/Login";
 function App() {
   const [seccion, setSeccion] = useState("inicio");
   const [sesionActiva, setSesionActiva] = useState(
-  localStorage.getItem("sesionActiva") === "true"
+  sessionStorage.getItem("sesionActiva")
 );
 
 const cerrarSesion = () => {
-  localStorage.removeItem("sesionActiva");
+  sessionStorage.removeItem("sesionActiva")
   setSesionActiva(false);
 };
 

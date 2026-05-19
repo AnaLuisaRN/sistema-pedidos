@@ -6,7 +6,7 @@ function Login({ iniciarSesion }) {
 
   const validarLogin = () => {
     if (usuario === "admin" && password === "12345") {
-      localStorage.setItem("sesionActiva", "true");
+      sessionStorage.setItem("sesionActiva","true");
       iniciarSesion();
     } else {
       alert("Usuario o contraseña incorrectos");
