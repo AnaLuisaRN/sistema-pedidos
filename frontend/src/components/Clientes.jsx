@@ -7,7 +7,7 @@ function Clientes() {
   const [busqueda, setBusqueda] = useState("");
 
   const [paginaActual, setPaginaActual] = useState(1);
-  const registrosPorPagina = 5;
+  const registrosPorPagina = 9;
 
   const [editando, setEditando] = useState(false);
   const [idCliente, setIdCliente] = useState(null);
